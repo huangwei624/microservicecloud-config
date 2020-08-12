@@ -1,16 +1,12 @@
 
 spring:
-  profiles:
-    active: dev
-
----
-spring:
   profiles: dev
   application:
     name: config-client
 
 server:
   port: 9991
+
 ## eureka client 配置
 eureka:
   instance:
@@ -31,6 +27,8 @@ spring:
 
 server:
   port: 9992
+
+
 ## eureka client 配置
 eureka:
   instance:
@@ -42,3 +40,10 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://127.0.0.1:8081/eureka/
+   
+## 测试数据   
+redis:
+  host: 193.168.56.23
+  port: 6379
+  username: root
+  password: root
