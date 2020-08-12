@@ -46,4 +46,4 @@ redis:
   host: 193.168.56.23
   port: 6379
   username: root
-  password: root
+  password: roottest
